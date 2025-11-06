@@ -297,7 +297,7 @@ export default function AddPatient() {
                       >
                         <option value="">Select file Type</option>
                         <option value="excel">Excel(.xlsx)</option>
-                        <option value="pdf">PDF(.pdf)</option>
+                        {/* <option value="pdf">PDF(.pdf)</option> */}
                       </select>
 
                       {uploadType !== "" && (
