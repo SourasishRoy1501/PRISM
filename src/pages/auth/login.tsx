@@ -46,7 +46,7 @@ export default function Login() {
           <h1 className="text-3xl font-bold text-white mb-2">Sign in to your account</h1>
         </div>
 
-        {/* Google Sign In Button */}
+        {/* Google Sign In Button
         <button
           onClick={signInWithGoogle}
           disabled={loading}
@@ -59,17 +59,17 @@ export default function Login() {
             <path fill="currentColor" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
           </svg>
           <span>Sign in with Google</span>
-        </button>
+        </button> */}
 
         {/* Divider */}
-        <div className="relative mb-6">
+        {/* <div className="relative mb-6">
           <div className="absolute inset-0 flex items-center">
             <div className="w-full border-t border-gray-600"></div>
           </div>
           <div className="relative flex justify-center text-sm">
             <span className="px-2 bg-slate-900 text-gray-400">Or continue with</span>
           </div>
-        </div>
+        </div> */}
 
         {/* Error Message */}
         {error && (
@@ -93,12 +93,12 @@ export default function Login() {
           </div>
           
           <div>
-            <div className="flex items-center justify-between mb-2">
+            {/* <div className="flex items-center justify-between mb-2">
               <label className="block text-sm font-medium text-white">Password</label>
               <Link href="/auth/forgot-password" className="text-sm text-teal-400 hover:text-teal-300">
                 Forgot password?
               </Link>
-            </div>
+            </div> */}
             <input
               value={password}
               onChange={(e) => setPassword(e.target.value)}
@@ -118,12 +118,12 @@ export default function Login() {
         </form>
 
         {/* Sign Up Link */}
-        <p className="mt-6 text-center text-sm text-gray-400">
+        {/* <p className="mt-6 text-center text-sm text-gray-400">
           Not a member?{' '}
           <Link href="/auth/signup" className="text-teal-400 hover:text-teal-300 font-medium">
             Create an account
           </Link>
-        </p>
+        </p> */}
       </div>
     </div>
   )
